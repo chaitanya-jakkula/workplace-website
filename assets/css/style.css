@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333333;
+}
+
+header {
+    background: #1a73e8;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+nav {
+    background: #0f5ac6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 60px 40px;
+    background: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+}
+
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+footer {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.service-box {
+    background: #e9f0ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background: #1a73e8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Dark mode */
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+body.dark header,
+body.dark footer {
+    background: #0f5ac6;
+}
+
+body.dark nav {
+    background: #0c4aa3;
+}
+
+body.dark .section,
+body.dark .hero {
+    background: #1e1e1e;
+}
+
+.dark-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1a73e8;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
