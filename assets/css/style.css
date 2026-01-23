@@ -1,105 +1,164 @@
-body {
+/* ------------------------------
+   GLOBAL RESET + TYPOGRAPHY
+--------------------------------*/
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-    color: #333333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ------------------------------
+   HEADER + NAVIGATION
+--------------------------------*/
 header {
-    background: #1a73e8;
+    background: linear-gradient(135deg, #1a73e8, #0f5ac6);
     color: white;
-    padding: 20px 40px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 nav {
-    background: #0f5ac6;
-    padding: 10px 0;
+    background: white;
+    padding: 14px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #1a73e8;
+    margin: 0 18px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: opacity 0.3s ease, color 0.3s ease;
 }
 
-.section {
-    padding: 60px 40px;
-    background: white;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 8px;
+nav a:hover {
+    opacity: 0.7;
 }
 
+/* ------------------------------
+   HERO SECTION
+--------------------------------*/
 .hero {
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
-    background: white;
+    background: linear-gradient(135deg, #e9f0ff, #ffffff);
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 20px;
     color: #555;
 }
 
-footer {
-    background: #1a73e8;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+/* ------------------------------
+   SECTIONS + CARDS
+--------------------------------*/
+.section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: background 0.3s ease;
 }
 
-.service-box {
-    background: #e9f0ff;
-    padding: 20px;
-    border-radius: 8px;
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* ------------------------------
+   CONTACT FORM
+--------------------------------*/
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 .contact-form button {
     background: #1a73e8;
     color: white;
-    padding: 12px 20px;
+    padding: 14px 24px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
 }
 
-/* Dark mode */
+.contact-form button:hover {
+    background: #0f5ac6;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    margin-top: 40px;
+}
+
+/* ------------------------------
+   DARK MODE
+--------------------------------*/
 body.dark {
     background: #121212;
     color: #e0e0e0;
 }
 
-body.dark header,
-body.dark footer {
-    background: #0f5ac6;
-}
-
 body.dark nav {
-    background: #0c4aa3;
+    background: #1e1e1e;
+    box-shadow: none;
 }
 
 body.dark .section,
-body.dark .hero {
+body.dark .hero,
+body.dark .card {
     background: #1e1e1e;
+    box-shadow: 0 4px 14px rgba(255,255,255,0.05);
+}
+
+body.dark header {
+    background: linear-gradient(135deg, #0f5ac6, #0a3f8a);
 }
 
 .dark-toggle {
@@ -108,8 +167,10 @@ body.dark .hero {
     right: 20px;
     background: #1a73e8;
     color: white;
-    padding: 10px 14px;
-    border-radius: 6px;
+    padding: 12px 18px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
