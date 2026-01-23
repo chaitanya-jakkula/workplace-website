@@ -4,18 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonials | Workplace</title>
-
-    <meta name="description" content="See what clients say about Workplace — a trusted Agile delivery and web development partner." />
-
+    <meta name="description" content="Hear from teams that have partnered with Workplace for delivery and engineering excellence." />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">Workplace</div>
+    <div class="nav-inner">
+        <div class="nav-logo">Workplace</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -27,43 +23,64 @@
     </div>
 </nav>
 
-<header class="hero-modern">
-    <h1>Testimonials</h1>
-    <p>What our clients say about working with us</p>
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">Testimonials</div>
+        <h1 class="hero-title">What Our Partners Say</h1>
+        <p class="hero-subtitle">
+            A sample of feedback from teams that trusted Workplace with their delivery and engineering.
+        </p>
+    </div>
 </header>
 
-<section class="section-modern">
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        “Workplace brought structure to our roadmap and helped us ship consistently without burning out the team.”
+                    </p>
+                    <p class="testimonial-name">TechNova Solutions</p>
+                    <p class="testimonial-role">Head of Product</p>
+                </div>
 
-    <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        “The combination of delivery leadership and hands‑on engineering was exactly what we needed to move forward.”
+                    </p>
+                    <p class="testimonial-name">BlueWave Digital</p>
+                    <p class="testimonial-role">Engineering Manager</p>
+                </div>
 
-        <div class="card-modern">
-            <h3>“A true delivery partner.”</h3>
-            <p>Workplace brought structure and predictability to our roadmap. We shipped faster with better quality.</p>
-            <p><strong>— TechNova Solutions</strong></p>
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="quote"></i>
+                    </div>
+                    <p class="testimonial-quote">
+                        “They helped us scale our platform while keeping quality high and stakeholders aligned. Calm, clear, and reliable.”
+                    </p>
+                    <p class="testimonial-name">CloudEdge Systems</p>
+                    <p class="testimonial-role">CTO</p>
+                </div>
+            </div>
         </div>
-
-        <div class="card-modern">
-            <h3>“Clear communication & excellent engineering.”</h3>
-            <p>Their blend of delivery leadership and technical depth made a huge impact on our product.</p>
-            <p><strong>— BlueWave Digital</strong></p>
-        </div>
-
-        <div class="card-modern">
-            <h3>“Helped us scale without slowing down.”</h3>
-            <p>A perfect mix of Agile discipline and hands‑on engineering expertise.</p>
-            <p><strong>— CloudEdge Systems</strong></p>
-        </div>
-
-    </div>
-
-</section>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Workplace. All Rights Reserved.</p>
+    © 2026 Workplace. All rights reserved.
 </footer>
 
-<!--<div class="dark-toggle" onclick="document.body.classList.toggle('dark')">Dark Mode</div> -->
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
-
