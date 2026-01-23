@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Workplace</title>
-    <meta name="description" content="Contact Workplace for professional web development services and modern website solutions." />
-    <meta name="keywords" content="web development, IT services, website design, frontend development, Workplace" />
-    <link rel="icon" type="image/png" href="assets/img/placeholder.png" />
+    <title>Careers | Workplace</title>
+
+    <meta name="description" content="Join Workplace — a team of engineers and delivery professionals who care about quality, clarity, and craftsmanship." />
+
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
-    <h1>Contact Us</h1>
+    <h1>Careers</h1>
+    <p>Join a team that values clarity, quality, and craftsmanship</p>
 </header>
 
 <nav>
@@ -25,24 +28,34 @@
 </nav>
 
 <section class="section">
-    <form class="contact-form" action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    <h2>What We Look For</h2>
+
+    <div class="card">
+        <h3>Ownership</h3>
+        <p>We value people who take initiative and drive outcomes.</p>
+    </div>
+
+    <div class="card">
+        <h3>Clean Engineering</h3>
+        <p>We care deeply about maintainable, scalable, and thoughtful code.</p>
+    </div>
+
+    <div class="card">
+        <h3>Delivery Discipline</h3>
+        <p>We believe great engineering is nothing without predictable execution.</p>
+    </div>
+
+    <div class="card">
+        <h3>Continuous Improvement</h3>
+        <p>We’re always learning, iterating, and raising the bar.</p>
+    </div>
 </section>
 
 <footer>
     <p>© 2026 Workplace. All Rights Reserved.</p>
 </footer>
 
-<script>
-function toggleDark() {
-    document.body.classList.toggle('dark');
-}
-</script>
-<div class="dark-toggle" onclick="toggleDark()">Dark Mode</div>
+<div class="dark-toggle" onclick="document.body.classList.toggle('dark')">Dark Mode</div>
 
 </body>
 </html>
