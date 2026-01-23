@@ -4,19 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers | Workplace</title>
-
-    <meta name="description" content="Join Workplace — a team of engineers and delivery professionals who care about clarity, quality, and craftsmanship." />
-
+    <meta name="description" content="Explore what Workplace values in engineers and delivery professionals who care about clarity and craftsmanship." />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    
 
 <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">Workplace</div>
+    <div class="nav-inner">
+        <div class="nav-logo">Workplace</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -28,56 +23,84 @@
     </div>
 </nav>
 
-<header class="hero-modern">
-    <h1>Careers</h1>
-    <p>Join a team that values clarity, quality, and craftsmanship</p>
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">Careers</div>
+        <h1 class="hero-title">Work With Care, Ship With Clarity</h1>
+        <p class="hero-subtitle">
+            We look for people who care about both how things are built and how they are delivered.
+        </p>
+    </div>
 </header>
 
-<section class="section-modern">
-    <h2>What We Look For</h2>
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Value</h2>
+                <p>Principles that matter more than titles or buzzwords.</p>
+            </div>
 
-    <div class="grid-3">
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Ownership</h3>
+                    <p>Taking responsibility for outcomes, not just tasks or tickets.</p>
+                </div>
 
-        <div class="card-modern">
-            <h3>Ownership</h3>
-            <p>We value people who take initiative and drive outcomes with accountability.</p>
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="file-code-2"></i>
+                    </div>
+                    <h3>Craftsmanship</h3>
+                    <p>Writing code and designing systems that you’re proud to maintain.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="clock-3"></i>
+                    </div>
+                    <h3>Delivery Discipline</h3>
+                    <p>Respecting commitments, timelines, and the people depending on them.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Curiosity</h3>
+                    <p>Asking better questions, exploring better approaches, and learning continuously.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3>Communication</h3>
+                    <p>Explaining trade‑offs clearly and listening with intent.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Working with others in a way that makes the work—and the team—better.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="card-modern">
-            <h3>Clean Engineering</h3>
-            <p>We care deeply about maintainable, scalable, and thoughtful code.</p>
-        </div>
-
-        <div class="card-modern">
-            <h3>Delivery Discipline</h3>
-            <p>Predictable execution is at the heart of everything we do.</p>
-        </div>
-
-        <div class="card-modern">
-            <h3>Continuous Improvement</h3>
-            <p>We’re always learning, iterating, and raising the bar.</p>
-        </div>
-
-        <div class="card-modern">
-            <h3>Collaboration</h3>
-            <p>We believe great products are built through teamwork and shared ownership.</p>
-        </div>
-
-        <div class="card-modern">
-            <h3>Craftsmanship</h3>
-            <p>We take pride in building things the right way — with care and intention.</p>
-        </div>
-
-    </div>
-</section>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Workplace. All Rights Reserved.</p>
+    © 2026 Workplace. All rights reserved.
 </footer>
 
-<!--<div class="dark-toggle" onclick="document.body.classList.toggle('dark')">Dark Mode</div> -->
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
-
-
