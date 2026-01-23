@@ -4,18 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Workplace</title>
-
-    <meta name="description" content="Workplace blends Agile delivery leadership with modern engineering to help businesses build, ship, and scale digital products." />
-
+    <meta name="description" content="Learn about Workplace, a boutique partner that combines Agile delivery leadership with modern web engineering." />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">Workplace</div>
+    <div class="nav-inner">
+        <div class="nav-logo">Workplace</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
@@ -27,45 +23,76 @@
     </div>
 </nav>
 
-<header class="hero-modern">
-    <h1>About Workplace</h1>
-    <p>Where Agile delivery meets modern engineering excellence</p>
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-eyebrow">About</div>
+        <h1 class="hero-title">A Delivery‑First, Engineering‑Led Partner</h1>
+        <p class="hero-subtitle">
+            Workplace exists at the intersection of delivery discipline and engineering craftsmanship—helping teams move fast without losing control.
+        </p>
+    </div>
 </header>
 
-<section class="section-modern">
-    <h2>Who We Are</h2>
-    <div class="card-modern">
-        <p>Workplace is a modern digital partner helping businesses build, deliver, and scale high‑quality web solutions. We combine Agile delivery leadership with clean, scalable engineering to bring clarity, speed, and predictability to every project.</p>
-    </div>
-</section>
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+                <p>A small, focused partner with a bias for clarity and execution.</p>
+            </div>
 
-<section class="section-modern">
-    <h2>Our Principles</h2>
+            <div class="grid-2">
+                <div>
+                    <p style="color:#4b5563; font-size:14px; margin-bottom:16px;">
+                        We’ve spent years leading teams, shipping products, and untangling complex delivery challenges. Workplace brings that experience into a lean, hands‑on model that blends strategy, execution, and engineering.
+                    </p>
+                    <p style="color:#4b5563; font-size:14px;">
+                        Whether you’re building a new product, modernizing an existing platform, or trying to bring order to delivery chaos, we focus on the fundamentals: clear goals, realistic plans, and high‑quality implementation.
+                    </p>
+                </div>
 
-    <div class="grid-3">
-        <div class="card-modern">
-            <h3>Delivery First</h3>
-            <p>We bring structure, alignment, and predictable execution to every engagement.</p>
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3>Outcome‑Driven</h3>
+                        <p>We anchor work around measurable outcomes—not just activity or output.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3>Pragmatic</h3>
+                        <p>We prefer practical, incremental improvements over big‑bang transformations.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>Collaborative</h3>
+                        <p>We work closely with your teams, not in a black box.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Reliable</h3>
+                        <p>We show up consistently—with honest communication and predictable delivery.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="card-modern">
-            <h3>Engineering Excellence</h3>
-            <p>We build scalable, maintainable, and future‑ready solutions using modern best practices.</p>
-        </div>
-
-        <div class="card-modern">
-            <h3>Transparent Collaboration</h3>
-            <p>Clear communication and shared ownership drive every project we take on.</p>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <footer>
-    <p>© 2026 Workplace. All Rights Reserved.</p>
+    © 2026 Workplace. All rights reserved.
 </footer>
 
-<!--<div class="dark-toggle" onclick="document.body.classList.toggle('dark')">Dark Mode</div> -->
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
-
