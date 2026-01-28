@@ -53,6 +53,42 @@ body {
     font-size: 15px;
 }
 
+
+
+/*------------------------------
+   LAYOUT
+--------------------------------*/
+.back-to-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 999;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    background: #1d4ed8;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* ------------------------------
    NAVBAR
 --------------------------------*/
@@ -327,3 +363,4 @@ footer {
         display: none;
     }
 }
+
