@@ -323,63 +323,6 @@ body {
     color: #6b7280;
 }
 
-/* ------------------------------
-   TESTIMONIALS
---------------------------------*/
-.testimonial-quote {
-    font-size: 15px;
-    color: #374151;
-    margin-bottom: 10px;
-}
-
-.testimonial-name {
-    font-size: 14px;
-    font-weight: 600;
-    color: #111827;
-}
-
-.testimonial-role {
-    font-size: 13px;
-    color: #6b7280;
-}
-
-/* ------------------------------
-   CONTACT FORM
---------------------------------*/
-.contact-form {
-    max-width: 520px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    display: block;
-    font-size: 13px;
-    font-weight: 500;
-    color: #374151;
-    margin-bottom: 4px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border-radius: 10px;
-    border: 1px solid #d1d5db;
-    font-size: 14px;
-    margin-bottom: 14px;
-    outline: none;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 1px #2563eb1a;
-}
-
-.contact-form button {
-    margin-top: 4px;
-}
 
 /* ------------------------------
    FOOTER
@@ -413,6 +356,7 @@ footer {
         display: none;
     }
 }
+
 
 
 
