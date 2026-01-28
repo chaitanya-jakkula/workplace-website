@@ -6,7 +6,98 @@
     <title>Workplace | Delivering Digital Excellence</title>
     <meta name="description" content="Workplace helps teams build and ship modern web experiences with clarity, craftsmanship, and predictable delivery." />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        /* ------------------------------
+           BACK TO TOP BUTTON
+        ------------------------------*/
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            z-index: 999;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            background: #1d4ed8;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ------------------------------
+           FADE-IN ANIMATIONS
+        ------------------------------*/
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ------------------------------
+           ENHANCED MOBILE SPACING
+        ------------------------------*/
+        @media (max-width: 640px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero-inner {
+                padding: 64px 20px 64px;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .grid-3,
+            .grid-2 {
+                gap: 20px;
+            }
+
+            .card {
+                padding: 20px;
+                border-radius: 14px;
+            }
+
+            .hero-title {
+                font-size: 28px;
+                line-height: 1.25;
+            }
+
+            .hero-subtitle {
+                font-size: 15px;
+            }
+
+            .nav-inner {
+                padding: 10px 16px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -25,7 +116,7 @@
 </nav>
 
 <!-- HERO -->
-<header class="hero" id="home">
+<header class="hero fade-in" id="home">
     <div class="hero-inner">
         <div class="hero-eyebrow">Agile Delivery · Modern Web Engineering</div>
 
@@ -51,7 +142,7 @@
 <main>
 
 <!-- WHY WORKPLACE -->
-<section class="section" id="why">
+<section class="section fade-in" id="why">
     <div class="container">
         <div class="section-header">
             <h2>Why Workplace</h2>
@@ -60,7 +151,7 @@
 
         <div class="grid-3">
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="workflow"></i>
                 </div>
@@ -70,7 +161,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="code-2"></i>
                 </div>
@@ -80,7 +171,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="handshake"></i>
                 </div>
@@ -95,7 +186,7 @@
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="services">
+<section class="section fade-in" id="services">
     <div class="container">
 
         <div class="section-header">
@@ -105,7 +196,7 @@
 
         <div class="grid-3">
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="layout-dashboard"></i>
                 </div>
@@ -115,7 +206,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="globe-2"></i>
                 </div>
@@ -125,7 +216,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="monitor-smartphone"></i>
                 </div>
@@ -135,7 +226,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="wrench"></i>
                 </div>
@@ -145,7 +236,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="brain-circuit"></i>
                 </div>
@@ -155,7 +246,7 @@
                 </p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="life-buoy"></i>
                 </div>
@@ -171,7 +262,7 @@
 </section>
 
 <!-- ABOUT -->
-<section class="section" id="about">
+<section class="section fade-in" id="about">
     <div class="container">
 
         <div class="section-header">
@@ -181,7 +272,7 @@
 
         <div class="grid-2">
 
-            <div>
+            <div class="fade-in">
                 <p style="color:#4b5563; font-size:14px; margin-bottom:16px;">
                     We’ve spent years leading teams, shipping products, and untangling complex delivery challenges. Workplace brings that experience into a lean, hands‑on model that blends strategy, execution, and engineering.
                 </p>
@@ -193,7 +284,7 @@
 
             <div class="grid-2">
 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-icon">
                         <i data-lucide="target"></i>
                     </div>
@@ -201,7 +292,7 @@
                     <p>We anchor every engagement around measurable progress and meaningful results.</p>
                 </div>
 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-icon">
                         <i data-lucide="compass"></i>
                     </div>
@@ -209,7 +300,7 @@
                     <p>We avoid over‑engineering and focus on what moves the product forward.</p>
                 </div>
 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-icon">
                         <i data-lucide="users"></i>
                     </div>
@@ -217,7 +308,7 @@
                     <p>We work closely with your team, creating shared ownership and shared wins.</p>
                 </div>
 
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-icon">
                         <i data-lucide="shield-check"></i>
                     </div>
@@ -233,7 +324,7 @@
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="section" id="testimonials">
+<section class="section fade-in" id="testimonials">
     <div class="container">
 
         <div class="section-header">
@@ -243,7 +334,7 @@
 
         <div class="grid-3">
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="quote"></i>
                 </div>
@@ -254,7 +345,7 @@
                 <p class="testimonial-role">Head of Product</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="quote"></i>
                 </div>
@@ -265,7 +356,7 @@
                 <p class="testimonial-role">Engineering Manager</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="quote"></i>
                 </div>
@@ -282,7 +373,7 @@
 </section>
 
 <!-- CAREERS -->
-<section class="section" id="careers">
+<section class="section fade-in" id="careers">
     <div class="container">
 
         <div class="section-header">
@@ -292,7 +383,7 @@
 
         <div class="grid-3">
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="sparkles"></i>
                 </div>
@@ -300,7 +391,7 @@
                 <p>You take responsibility for outcomes—not just tasks. You follow through, communicate clearly, and raise flags early.</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="file-code-2"></i>
                 </div>
@@ -308,7 +399,7 @@
                 <p>You care about building things the right way—clean code, thoughtful design, and maintainable systems.</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="clock-3"></i>
                 </div>
@@ -316,7 +407,7 @@
                 <p>You respect commitments, timelines, and the people depending on them. Predictability matters as much as speed.</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="lightbulb"></i>
                 </div>
@@ -324,7 +415,7 @@
                 <p>You ask better questions, explore better approaches, and stay open to learning—always.</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="message-circle"></i>
                 </div>
@@ -332,7 +423,7 @@
                 <p>You explain trade‑offs clearly, listen with intent, and help teams stay aligned and informed.</p>
             </div>
 
-            <div class="card">
+            <div class="card fade-in">
                 <div class="card-icon">
                     <i data-lucide="heart-handshake"></i>
                 </div>
@@ -346,7 +437,7 @@
 </section>
 
 <!-- CONTACT -->
-<section class="section" id="contact">
+<section class="section fade-in" id="contact">
     <div class="container">
 
         <div class="section-header">
@@ -354,7 +445,7 @@
             <p>We’ll get back to you with clarity and direction.</p>
         </div>
 
-        <div class="card">
+        <div class="card fade-in">
             <form class="contact-form">
 
                 <div>
@@ -389,16 +480,16 @@
     © 2026 Workplace. All rights reserved.
 </footer>
 
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons();
-</script>
+<!-- BACK TO TOP BUTTON -->
 <button id="backToTop" class="back-to-top">
     <i data-lucide="arrow-up"></i>
 </button>
-</body>
-</html>
+
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
+    lucide.createIcons();
+
+    /* Back to Top Button Logic */
     const backToTop = document.getElementById("backToTop");
 
     window.addEventListener("scroll", () => {
@@ -412,6 +503,20 @@
     backToTop.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+    /* Fade-in Animation Logic */
+    const animatedElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedElements.forEach(el => observer.observe(el));
 </script>
 
-
+</body>
+</html>
