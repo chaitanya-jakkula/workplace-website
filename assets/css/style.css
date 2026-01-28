@@ -1,3 +1,43 @@
+/* Enhanced Mobile Spacing */
+@media (max-width: 640px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .hero-inner {
+        padding: 64px 20px 64px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .grid-3,
+    .grid-2 {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 1.25;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .nav-inner {
+        padding: 10px 16px;
+    }
+}
+
+
 /* ------------------------------
    RESET & BASE
 --------------------------------*/
@@ -363,4 +403,5 @@ footer {
         display: none;
     }
 }
+
 
