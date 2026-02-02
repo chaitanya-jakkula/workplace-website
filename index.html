@@ -115,6 +115,15 @@
     </div>
 </nav>
 
+
+    <!-- Hamburger Button -->
+<div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
 <!-- HERO -->
 <header class="hero fade-in" id="home">
     <div class="hero-inner">
@@ -517,6 +526,24 @@
 
     animatedElements.forEach(el => observer.observe(el));
 </script>
+    <script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navLinks.classList.toggle("show");
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            burger.classList.remove("active");
+            navLinks.classList.remove("show");
+        });
+    });
+</script>
 
 </body>
 </html>
+
