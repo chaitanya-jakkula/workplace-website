@@ -57,65 +57,6 @@
         }
 
         /* ------------------------------
-           HAMBURGER MENU
-        ------------------------------*/
-        .nav-left {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .burger {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
-
-        .burger span {
-            width: 26px;
-            height: 3px;
-            background: #1f2937;
-            border-radius: 3px;
-            transition: 0.3s ease;
-        }
-
-        /* Burger animation */
-        .burger.active span:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-        }
-
-        .burger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .burger.active span:nth-child(3) {
-            transform: translateY(-8px) rotate(-45deg);
-        }
-
-        /* Mobile dropdown */
-        @media (max-width: 900px) {
-            .nav-links {
-                position: absolute;
-                top: 64px;
-                right: 0;
-                width: 100%;
-                background: white;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                padding: 20px 0;
-                display: none;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-                z-index: 999;
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-        }
-
-        /* ------------------------------
            ENHANCED MOBILE SPACING
         ------------------------------*/
         @media (max-width: 640px) {
@@ -162,19 +103,7 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="nav-inner">
-
-        <!-- Left side: Burger + Logo -->
-        <div class="nav-left">
-            <div class="burger" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="nav-logo">Workplace</div>
-        </div>
-
-        <!-- Right side: Desktop nav -->
+        <div class="nav-logo">Workplace</div>
         <div class="nav-links">
             <a data-scroll="home">Home</a>
             <a data-scroll="services">Services</a>
@@ -183,7 +112,6 @@
             <a data-scroll="careers">Careers</a>
             <a data-scroll="contact">Contact</a>
         </div>
-
     </div>
 </nav>
 
@@ -544,3 +472,67 @@
         </div>
 
     </div>
+</section>
+
+</main>
+
+<footer>
+    © 2026 Workplace. All rights reserved.
+</footer>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" class="back-to-top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+
+    /* Smooth scroll without changing URL */
+    document.querySelectorAll('[data-scroll]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.getElementById(this.dataset.scroll);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    /* Prevent hash from appearing */
+    window.addEventListener("hashchange", function() {
+        history.replaceState(null, null, " ");
+    });
+
+    /* Back to Top Button Logic */
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    /* Fade-in Animation Logic */
+    const animatedElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
