@@ -104,15 +104,24 @@
 <nav class="navbar">
     <div class="nav-inner">
         <div class="nav-logo">Workplace</div>
-        <div class="nav-links">
-            <a data-scroll="home">Home</a>
-            <a data-scroll="services">Services</a>
-            <a data-scroll="about">About</a>
-            <a data-scroll="testimonials">Testimonials</a>
-            <a data-scroll="careers">Careers</a>
-            <a data-scroll="contact">Contact</a>
-        </div>
+<div class="nav-links">
+    <a data-scroll="home">Home</a>
+    <a data-scroll="services">Services</a>
+    <a data-scroll="about">About</a>
+    <a data-scroll="testimonials">Testimonials</a>
+    <a data-scroll="careers">Careers</a>
+    <a data-scroll="contact">Contact</a>
+</div>
+
+<!-- Hamburger Button -->
+<div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
     </div>
+
+    
 </nav>
 
 <!-- HERO -->
@@ -534,5 +543,25 @@
     animatedElements.forEach(el => observer.observe(el));
 </script>
 
+<script>
+    const burger = document.getElementById("burger");
+    const navLinks = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        navLinks.classList.toggle("show");
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            burger.classList.remove("active");
+            navLinks.classList.remove("show");
+        });
+    });
+</script>
+
+    
 </body>
 </html>
+
