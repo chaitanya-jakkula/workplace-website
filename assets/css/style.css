@@ -517,6 +517,98 @@ footer {
 
 
 
+/* Contact Card Container */
+.contact-card {
+    padding: 36px;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 32px rgba(0,0,0,0.06);
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* Form Layout */
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Labels */
+.contact-card label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Inputs + Textarea */
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background: #f9fafb;
+    font-size: 15px;
+    color: #111827;
+    transition: all 0.25s ease;
+}
+
+/* Hover + Focus */
+.contact-card input:hover,
+.contact-card textarea:hover {
+    border-color: #9ca3af;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Textarea */
+.contact-card textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Submit Button */
+.contact-card button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+}
+
+.contact-card button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+}
+
+.contact-card button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+
+
+
 
 
 
