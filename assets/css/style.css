@@ -366,6 +366,9 @@ body {
     }
 }
 
+/* ------------------------------
+   
+
 .card {
     background: #ffffff;
     border-radius: 16px;
@@ -373,6 +376,15 @@ body {
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     border: 1px solid #e5e7eb;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+--------------------------------*/
+
+.card {
+    padding: 32px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+    border: 1px solid #f3f4f6;
 }
 
 .card:hover {
@@ -502,6 +514,7 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
 
 
