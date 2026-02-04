@@ -523,12 +523,13 @@ footer {
 
 /* Contact Card Container */
 .contact-card {
+    width: 100%;
     padding: 36px;
     border-radius: 18px;
     background: #ffffff;
     border: 1px solid #e5e7eb;
     box-shadow: 0 10px 32px rgba(0,0,0,0.06);
-    max-width: 1000px;
+    max-width: 640px;
     margin: 0 auto;
 }
 
@@ -609,6 +610,7 @@ footer {
     transform: translateY(0);
     box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
 }
+
 
 
 
