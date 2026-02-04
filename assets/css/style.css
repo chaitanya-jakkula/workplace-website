@@ -258,6 +258,92 @@ body {
     background: #f9fafb;
 }
 
+
+/* Contact Card */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background: #f9fafb;
+    font-size: 15px;
+    color: #111827;
+    transition: all 0.25s ease;
+}
+
+/* Hover + Focus */
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #9ca3af;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Textarea */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Submit Button */
+.contact-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 22px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+}
+
+.contact-form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(37, 99, 235, 0.25);
+}
+
+
+
+
+
+
+
+
+
 /* ------------------------------
    GRID & CARDS
 --------------------------------*/
@@ -416,6 +502,7 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
 
 
 
