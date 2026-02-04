@@ -529,13 +529,12 @@ footer {
     background: #ffffff;
     border: 1px solid #e5e7eb;
     box-shadow: 0 10px 32px rgba(0,0,0,0.06);
-    max-width: 640px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 /* Form Layout */
 .contact-card form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -611,6 +610,7 @@ footer {
     transform: translateY(0);
     box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
 }
+
 
 
 
