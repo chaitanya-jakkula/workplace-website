@@ -567,18 +567,22 @@
     });
 </script>
 
-    <script>
-    document.body.style.opacity = "0";
 
-    window.addEventListener("load", () => {
+    <script>
+    // Always load at the top (Home) on refresh
+    window.addEventListener("beforeunload", () => {
         window.scrollTo(0, 0);
-        document.body.style.transition = "opacity 0.4s ease";
-        document.body.style.opacity = "1";
+    });
+
+    // Also ensure on load it starts at top
+    window.addEventListener("load", () => {
+        setTimeout(() => window.scrollTo(0, 0), 10);
     });
 </script>
     
 </body>
 </html>
+
 
 
 
