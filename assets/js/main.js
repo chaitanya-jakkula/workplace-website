@@ -10,7 +10,9 @@ document.querySelectorAll("[data-scroll]").forEach(link => {
     link.addEventListener("click", e => {
         e.preventDefault();
         const target = document.getElementById(link.dataset.scroll);
-        if (target) target.scrollIntoView({ behavior: "smooth" });
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
     });
 });
 
@@ -30,7 +32,7 @@ burger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
 });
 
-/* Close menu on link click */
+/* Close menu when clicking a link */
 document.querySelectorAll(".navbar__link").forEach(link => {
     link.addEventListener("click", () => {
         burger.classList.remove("active");
@@ -44,8 +46,11 @@ document.querySelectorAll(".navbar__link").forEach(link => {
 const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) backToTop.classList.add("show");
-    else backToTop.classList.remove("show");
+    if (window.scrollY > 400) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
 });
 
 backToTop.addEventListener("click", () => {
@@ -59,7 +64,9 @@ const fadeElements = document.querySelectorAll(".section--fade");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("visible");
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
     });
 }, { threshold: 0.15 });
 
@@ -87,7 +94,9 @@ resetBtn.addEventListener("click", () => {
     contactForm.reset();
 
     contactForm.style.animation = "fadeScale 0.5s ease";
-    setTimeout(() => contactForm.style.animation = "", 600);
+    setTimeout(() => {
+        contactForm.style.animation = "";
+    }, 600);
 });
 
 /* =========================================================
