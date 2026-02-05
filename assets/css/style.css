@@ -116,7 +116,7 @@ a {
     font-weight: 700;
 }
 
-/* BURGER */
+/* BURGER 
 .navbar__burger {
     display: flex;
     flex-direction: column;
@@ -131,8 +131,9 @@ a {
     border-radius: 3px;
     transition: 0.3s ease;
 }
+*/
 
-/* Burger active state */
+/* Burger active state 
 .navbar__burger.active .navbar__burger-line:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -142,6 +143,7 @@ a {
 .navbar__burger.active .navbar__burger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+*/
 
 
 /* Desktop: hide burger */
@@ -655,6 +657,7 @@ a {
         padding: 10px 16px;
     }
 }
+
 
 
 
