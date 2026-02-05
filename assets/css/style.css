@@ -501,6 +501,139 @@ a {
     }
 }
 
+/* ============================================================
+   CONSOLIDATED VISUAL QA PATCH
+   Fixes hero alignment, navbar spacing, grids, cards, typography,
+   testimonials, footer, mobile responsiveness, and dark mode.
+===============================================================*/
+
+/* NAVBAR FIXES */
+.navbar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar__links {
+    margin-left: auto;
+}
+
+/* HERO FIXES */
+.hero {
+    padding: 120px 0 100px;
+    text-align: center;
+}
+
+.hero__inner {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.hero__eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.hero__title {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    font-size: 17px;
+    margin-bottom: 32px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.hero__actions {
+    display: inline-flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* GRID & CARD SPACING */
+.grid--3 {
+    gap: 40px;
+}
+
+.card {
+    padding: 32px;
+}
+
+/* ABOUT SECTION TYPOGRAPHY */
+.about__text p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* TESTIMONIALS TYPOGRAPHY */
+.testimonial-quote {
+    font-size: 15px;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.testimonial-name {
+    font-weight: 600;
+}
+
+.testimonial-role {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* FOOTER SPACING */
+.footer {
+    padding: 32px 0;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* CONTACT FORM WIDTH + INPUT CONTRAST */
+.contact-card {
+    max-width: 860px;
+}
+
+.form__input,
+.form__textarea {
+    border: 1px solid var(--border);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 640px) {
+    .hero {
+        padding: 90px 0 70px;
+    }
+
+    .hero__title {
+        font-size: 28px;
+    }
+
+    .hero__subtitle {
+        font-size: 15px;
+    }
+
+    .navbar__inner {
+        padding: 10px 16px;
+    }
+}
+
+
 
 
 
