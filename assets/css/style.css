@@ -204,12 +204,54 @@ a {
 
 /* =========================================================
    3. COMPONENTS
+   - Hero
    - Cards
    - Buttons
    - Contact Form
    - Back to Top
 =========================================================*/
 
+/* HERO LAYOUT */
+.hero {
+    padding: 120px 0 100px;
+    background: var(--bg);
+}
+
+.hero__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.hero__eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.hero__title {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+}
+
+/* Hero actions */
+.hero__actions {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
 /* CARDS */
 .card {
     padding: 28px;
@@ -438,3 +480,4 @@ a {
         padding: 28px 20px;
     }
 }
+
