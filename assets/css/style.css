@@ -211,19 +211,19 @@ a {
    - Back to Top
 =========================================================*/
 /* HERO LAYOUT */
-
 .hero {
     padding: 120px 0 100px;
+    background: var(--bg);
+}
+
+.hero__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
     text-align: center;
 }
 
-.hero-inner {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-.hero-eyebrow {
+.hero__eyebrow {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -232,45 +232,45 @@ a {
     margin-bottom: 16px;
 }
 
-.hero-title {
-    font-size: 38px;
+.hero__title {
+    font-size: 36px;
     line-height: 1.2;
-    font-weight: 700;
     margin-bottom: 16px;
 }
 
-.hero-subtitle {
-    font-size: 17px;
+.hero__subtitle {
+    font-size: 16px;
     color: var(--text-secondary);
-    margin-bottom: 32px;
-    line-height: 1.6;
+    margin-bottom: 28px;
 }
 
-.hero-actions {
+/* Hero actions */
+.hero__actions {
     display: inline-flex;
-    gap: 14px;
     flex-wrap: wrap;
+    gap: 12px;
     justify-content: center;
 }
 
 /* Mobile adjustments */
 @media (max-width: 640px) {
     .hero {
-        padding: 90px 0 70px;
+        padding: 96px 0 72px;
     }
 
-    .hero-title {
+    .hero__title {
         font-size: 28px;
     }
 
-    .hero-subtitle {
+    .hero__subtitle {
         font-size: 15px;
     }
 
-    .hero-inner {
+    .hero__inner {
         padding: 0 20px;
     }
 }
+
 
 /* CARDS */
 .card {
@@ -500,6 +500,7 @@ a {
         padding: 28px 20px;
     }
 }
+
 
 
 
