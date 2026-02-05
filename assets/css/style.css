@@ -143,6 +143,31 @@ a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
+
+/* Hide burger on desktop */
+.burger,
+.navbar__burger {
+    display: none;
+}
+
+/* Show burger only on mobile */
+@media (max-width: 900px) {
+    .burger,
+    .navbar__burger {
+        display: flex;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__links.show {
+        display: flex;
+    }
+}
+
+
+
 /* NAV LINKS */
 .navbar__links {
     display: flex;
@@ -632,6 +657,7 @@ a {
         padding: 10px 16px;
     }
 }
+
 
 
 
