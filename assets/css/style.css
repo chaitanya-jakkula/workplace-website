@@ -144,15 +144,13 @@ a {
 }
 
 
-/* Hide burger on desktop */
-.burger,
+/* Desktop: hide burger */
 .navbar__burger {
     display: none;
 }
 
-/* Show burger only on mobile */
+/* Mobile: show burger */
 @media (max-width: 900px) {
-    .burger,
     .navbar__burger {
         display: flex;
     }
@@ -657,6 +655,7 @@ a {
         padding: 10px 16px;
     }
 }
+
 
 
 
