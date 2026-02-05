@@ -460,6 +460,11 @@
 
       <div class="contact-card">
     <form class="contact-form">
+        <div class="form-success" id="formSuccess">
+    <div class="success-icon">✓</div>
+    <h3 style="margin-bottom: 8px;">Message Sent</h3>
+    <p style="color:#4b5563;">Thanks for reaching out. We’ll get back to you shortly.</p>
+</div>
         <div>
             <label for="name">Name</label>
             <input id="name" type="text" placeholder="Your name" required />
@@ -562,10 +567,24 @@
         });
     });
 </script>
+<script>
+    const contactForm = document.querySelector(".contact-form");
+    const formSuccess = document.getElementById("formSuccess");
 
+    contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Optional: simulate sending delay
+        setTimeout(() => {
+            contactForm.style.display = "none";
+            formSuccess.style.display = "block";
+        }, 300);
+    });
+</script>
     
 </body>
 </html>
+
 
 
 
