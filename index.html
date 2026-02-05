@@ -5,588 +5,329 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workplace | Delivering Digital Excellence</title>
     <meta name="description" content="Workplace helps teams build and ship modern web experiences with clarity, craftsmanship, and predictable delivery." />
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <style>
-        /* ------------------------------
-           BACK TO TOP BUTTON
-        ------------------------------*/
-        .back-to-top {
-            position: fixed;
-            bottom: 28px;
-            right: 28px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: #2563eb;
-            color: #fff;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.25s ease, transform 0.25s ease;
-            z-index: 999;
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-3px);
-            background: #1d4ed8;
-        }
-
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* ------------------------------
-           FADE-IN ANIMATIONS
-        ------------------------------*/
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ------------------------------
-           ENHANCED MOBILE SPACING
-        ------------------------------*/
-        @media (max-width: 640px) {
-            .section {
-                padding: 60px 0;
-            }
-
-            .hero-inner {
-                padding: 64px 20px 64px;
-            }
-
-            .section-header h2 {
-                font-size: 24px;
-            }
-
-            .grid-3,
-            .grid-2 {
-                gap: 20px;
-            }
-
-            .card {
-                padding: 20px;
-                border-radius: 14px;
-            }
-
-            .hero-title {
-                font-size: 28px;
-                line-height: 1.25;
-            }
-
-            .hero-subtitle {
-                font-size: 15px;
-            }
-
-            .nav-inner {
-                padding: 10px 16px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body class="page">
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="nav-inner">
-        <div class="nav-logo">
-         
-              <a data-scroll="home">Workplace</a>
-           
-        </div>
-<div class="nav-links">
-    <a data-scroll="home">Home</a>
-    <a data-scroll="services">Services</a>
-    <a data-scroll="about">About</a>
-    <a data-scroll="testimonials">Testimonials</a>
-    <a data-scroll="careers">Careers</a>
-    <a data-scroll="contact">Contact</a>
-</div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar__inner">
 
-<!-- Hamburger Button -->
-<div class="burger" id="burger">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-    </div>
-
-    
-</nav>
-
-<!-- HERO -->
-<header class="hero fade-in" id="home">
-    <div class="hero-inner">
-        <div class="hero-eyebrow">Agile Delivery · Modern Web Engineering</div>
-
-        <h1 class="hero-title">Delivering Digital Excellence Through Clarity, Craft & Execution</h1>
-
-        <p class="hero-subtitle">
-            We help teams build and ship modern web experiences with a delivery model that’s predictable, transparent, and grounded in engineering discipline.
-        </p>
-
-        <div class="hero-actions">
-            <a data-scroll="services" class="btn-primary">
-                <i data-lucide="layers"></i>
-                <span>Explore Services</span>
-            </a>
-            <a data-scroll="contact" class="btn-ghost">
-                <i data-lucide="mail"></i>
-                <span>Start a Conversation</span>
-            </a>
-        </div>
-    </div>
-</header>
-
-<main>
-
-<!-- WHY WORKPLACE -->
-<section class="section fade-in" id="why">
-    <div class="container">
-        <div class="section-header">
-            <h2>Why Workplace</h2>
-            <p>Clarity in delivery. Quality in engineering. Partnership in execution.</p>
-        </div>
-
-        <div class="grid-3">
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="workflow"></i>
+            <!-- Left: burger + logo -->
+            <div class="navbar__left">
+                <div class="navbar__burger" id="burger">
+                    <span class="navbar__burger-line"></span>
+                    <span class="navbar__burger-line"></span>
+                    <span class="navbar__burger-line"></span>
                 </div>
-                <h3>Delivery You Can Trust</h3>
-                <p>
-                    Structured planning, clear communication, and predictable execution—so your team always knows what’s happening and why.
-                </p>
+
+                <div class="navbar__logo">Workplace</div>
             </div>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="code-2"></i>
-                </div>
-                <h3>Modern Engineering</h3>
-                <p>
-                    Clean, scalable, and maintainable solutions built with a focus on long‑term quality, not shortcuts.
-                </p>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="handshake"></i>
-                </div>
-                <h3>A True Partner</h3>
-                <p>
-                    We work alongside your team, aligning on goals, constraints, and outcomes—not just tasks.
-                </p>
+            <!-- Desktop nav -->
+            <div class="navbar__links" id="navLinks">
+                <a class="navbar__link" data-scroll="home">Home</a>
+                <a class="navbar__link" data-scroll="services">Services</a>
+                <a class="navbar__link" data-scroll="about">About</a>
+                <a class="navbar__link" data-scroll="testimonials">Testimonials</a>
+                <a class="navbar__link" data-scroll="careers">Careers</a>
+                <a class="navbar__link" data-scroll="contact">Contact</a>
             </div>
 
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- SERVICES -->
-<section class="section fade-in" id="services">
-    <div class="container">
+    <!-- HERO -->
+    <header class="hero section--fade" id="home">
+        <div class="hero__inner">
+            <div class="hero__eyebrow">Agile Delivery · Modern Web Engineering</div>
 
-        <div class="section-header">
-            <h2>Services</h2>
-            <p>Focused services that bring clarity, structure, and engineering excellence.</p>
+            <h1 class="hero__title">Delivering Digital Excellence Through Clarity, Craft & Execution</h1>
+
+            <p class="hero__subtitle">
+                We help teams build and ship modern web experiences with a delivery model that’s predictable, transparent, and grounded in engineering discipline.
+            </p>
+
+            <div class="hero__actions">
+                <a data-scroll="services" class="btn btn--primary">
+                    <i data-lucide="layers"></i>
+                    <span>Explore Services</span>
+                </a>
+                <a data-scroll="contact" class="btn btn--ghost">
+                    <i data-lucide="mail"></i>
+                    <span>Start a Conversation</span>
+                </a>
+            </div>
         </div>
+    </header>
 
-        <div class="grid-3">
+    <!-- MAIN CONTENT -->
+    <main>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="layout-dashboard"></i>
+        <!-- WHY -->
+        <section class="section section--fade" id="why">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Why Workplace</h2>
+                    <p class="section__subtitle">Clarity in delivery. Quality in engineering. Partnership in execution.</p>
                 </div>
-                <h3>Agile Delivery Leadership</h3>
-                <p>
-                    Roadmaps, sprint planning, stakeholder alignment, and execution oversight—designed to bring structure and predictability to your product lifecycle.
-                </p>
-            </div>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="globe-2"></i>
-                </div>
-                <h3>Custom Web Development</h3>
-                <p>
-                    Fast, responsive, and scalable web solutions tailored to your business and built with clean, modern engineering practices.
-                </p>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="monitor-smartphone"></i>
-                </div>
-                <h3>Frontend Engineering</h3>
-                <p>
-                    Thoughtful UI development using clean HTML, CSS, JavaScript, and modern frameworks.
-                </p>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="wrench"></i>
-                </div>
-                <h3>Enhancements & Modernization</h3>
-                <p>
-                    Incremental improvements that make your product faster, cleaner, and easier to maintain.
-                </p>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="brain-circuit"></i>
-                </div>
-                <h3>Technical Consulting</h3>
-                <p>
-                    Architecture guidance, delivery diagnostics, and practical recommendations to unblock teams and improve flow.
-                </p>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="life-buoy"></i>
-                </div>
-                <h3>Ongoing Support</h3>
-                <p>
-                    Lightweight, reliable support to keep your digital presence healthy and evolving.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section fade-in" id="about">
-    <div class="container">
-
-        <div class="section-header">
-            <h2>About</h2>
-            <p>A focused partner with a bias for clarity, craftsmanship, and execution.</p>
-        </div>
-
-        <div class="grid-2">
-
-            <div class="fade-in">
-                <p style="color:#4b5563; font-size:14px; margin-bottom:16px;">
-                    We’ve spent years leading teams, shipping products, and untangling complex delivery challenges. Workplace brings that experience into a lean, hands‑on model that blends strategy, execution, and engineering.
-                </p>
-
-                <p style="color:#4b5563; font-size:14px;">
-                    Whether you’re building a new product, modernizing an existing platform, or bringing order to delivery chaos, we focus on the fundamentals: clear goals, realistic plans, and high‑quality implementation.
-                </p>
-            </div>
-
-            <div class="grid-2">
-
-                <div class="card fade-in">
-                    <div class="card-icon">
-                        <i data-lucide="target"></i>
+                <div class="grid grid--3">
+                    <!-- Cards use BEM -->
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="workflow"></i></div>
+                        <h3 class="card__title">Delivery You Can Trust</h3>
+                        <p class="card__text">Structured planning, clear communication, and predictable execution.</p>
                     </div>
-                    <h3>Outcome‑Driven</h3>
-                    <p>We anchor every engagement around measurable progress and meaningful results.</p>
-                </div>
 
-                <div class="card fade-in">
-                    <div class="card-icon">
-                        <i data-lucide="compass"></i>
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="code-2"></i></div>
+                        <h3 class="card__title">Modern Engineering</h3>
+                        <p class="card__text">Clean, scalable, maintainable solutions built for long‑term quality.</p>
                     </div>
-                    <h3>Pragmatic</h3>
-                    <p>We avoid over‑engineering and focus on what moves the product forward.</p>
-                </div>
 
-                <div class="card fade-in">
-                    <div class="card-icon">
-                        <i data-lucide="users"></i>
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="handshake"></i></div>
+                        <h3 class="card__title">A True Partner</h3>
+                        <p class="card__text">We align on goals, constraints, and outcomes—not just tasks.</p>
                     </div>
-                    <h3>Collaborative</h3>
-                    <p>We work closely with your team, creating shared ownership and shared wins.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section section--fade" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Services</h2>
+                    <p class="section__subtitle">Focused services that bring clarity and engineering excellence.</p>
                 </div>
 
-                <div class="card fade-in">
-                    <div class="card-icon">
-                        <i data-lucide="shield-check"></i>
+                <div class="grid grid--3">
+                    <!-- Repeat card BEM structure -->
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="layout-dashboard"></i></div>
+                        <h3 class="card__title">Agile Delivery Leadership</h3>
+                        <p class="card__text">Roadmaps, planning, alignment, and execution oversight.</p>
                     </div>
-                    <h3>Reliable</h3>
-                    <p>You get consistent communication, predictable delivery, and zero surprises.</p>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="globe-2"></i></div>
+                        <h3 class="card__title">Custom Web Development</h3>
+                        <p class="card__text">Fast, responsive, scalable solutions built with modern engineering.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="monitor-smartphone"></i></div>
+                        <h3 class="card__title">Frontend Engineering</h3>
+                        <p class="card__text">Thoughtful UI development using clean HTML, CSS, JS.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="wrench"></i></div>
+                        <h3 class="card__title">Enhancements & Modernization</h3>
+                        <p class="card__text">Incremental improvements that make your product better.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="brain-circuit"></i></div>
+                        <h3 class="card__title">Technical Consulting</h3>
+                        <p class="card__text">Architecture guidance and delivery diagnostics.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="life-buoy"></i></div>
+                        <h3 class="card__title">Ongoing Support</h3>
+                        <p class="card__text">Reliable support to keep your digital presence evolving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section section--fade" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About</h2>
+                    <p class="section__subtitle">A focused partner with a bias for clarity and execution.</p>
                 </div>
 
-            </div>
+                <div class="grid grid--2">
+                    <div class="about__text section--fade">
+                        <p>We’ve spent years leading teams, shipping products, and untangling complex delivery challenges.</p>
+                        <p>We focus on fundamentals: clear goals, realistic plans, and high‑quality implementation.</p>
+                    </div>
 
-        </div>
+                    <div class="grid grid--2">
+                        <div class="card card--fade">
+                            <div class="card__icon"><i data-lucide="target"></i></div>
+                            <h3 class="card__title">Outcome‑Driven</h3>
+                            <p class="card__text">We anchor every engagement around measurable progress.</p>
+                        </div>
 
-    </div>
-</section>
+                        <div class="card card--fade">
+                            <div class="card__icon"><i data-lucide="compass"></i></div>
+                            <h3 class="card__title">Pragmatic</h3>
+                            <p class="card__text">We avoid over‑engineering and focus on what moves the product.</p>
+                        </div>
 
-<!-- TESTIMONIALS -->
-<section class="section fade-in" id="testimonials">
-    <div class="container">
+                        <div class="card card--fade">
+                            <div class="card__icon"><i data-lucide="users"></i></div>
+                            <h3 class="card__title">Collaborative</h3>
+                            <p class="card__text">We create shared ownership and shared wins.</p>
+                        </div>
 
-        <div class="section-header">
-            <h2>Testimonials</h2>
-            <p>What our partners say about working with Workplace.</p>
-        </div>
-
-        <div class="grid-3">
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="quote"></i>
+                        <div class="card card--fade">
+                            <div class="card__icon"><i data-lucide="shield-check"></i></div>
+                            <h3 class="card__title">Reliable</h3>
+                            <p class="card__text">Consistent communication, predictable delivery, zero surprises.</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="testimonial-quote">
-                    “Workplace brought clarity and structure to our roadmap. We shipped faster, with better quality, and far less stress.”
-                </p>
-                <p class="testimonial-name">TechNova Solutions</p>
-                <p class="testimonial-role">Head of Product</p>
             </div>
+        </section>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="quote"></i>
+        <!-- TESTIMONIALS -->
+        <section class="section section--fade" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Testimonials</h2>
+                    <p class="section__subtitle">What our partners say.</p>
                 </div>
-                <p class="testimonial-quote">
-                    “The blend of delivery leadership and engineering expertise was exactly what our team needed to move forward.”
-                </p>
-                <p class="testimonial-name">BlueWave Digital</p>
-                <p class="testimonial-role">Engineering Manager</p>
-            </div>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="quote"></i>
+                <div class="grid grid--3">
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="quote"></i></div>
+                        <p class="card__text">“Workplace brought clarity and structure to our roadmap.”</p>
+                        <p class="card__meta">TechNova Solutions — Head of Product</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="quote"></i></div>
+                        <p class="card__text">“The blend of delivery leadership and engineering expertise was perfect.”</p>
+                        <p class="card__meta">BlueWave Digital — Engineering Manager</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="quote"></i></div>
+                        <p class="card__text">“They helped us scale without losing control.”</p>
+                        <p class="card__meta">CloudEdge Systems — CTO</p>
+                    </div>
                 </div>
-                <p class="testimonial-quote">
-                    “They helped us scale without losing control. Calm, clear, and consistently reliable.”
-                </p>
-                <p class="testimonial-name">CloudEdge Systems</p>
-                <p class="testimonial-role">CTO</p>
             </div>
+        </section>
 
-        </div>
-
-    </div>
-</section>
-
-<!-- CAREERS -->
-<section class="section fade-in" id="careers">
-    <div class="container">
-
-        <div class="section-header">
-            <h2>Careers</h2>
-            <p>Principles that matter more than titles or buzzwords.</p>
-        </div>
-
-        <div class="grid-3">
-
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="sparkles"></i>
+        <!-- CAREERS -->
+        <section class="section section--fade" id="careers">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Careers</h2>
+                    <p class="section__subtitle">Principles that matter more than titles.</p>
                 </div>
-                <h3>Ownership</h3>
-                <p>You take responsibility for outcomes—not just tasks. You follow through, communicate clearly, and raise flags early.</p>
-            </div>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="file-code-2"></i>
+                <div class="grid grid--3">
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="sparkles"></i></div>
+                        <h3 class="card__title">Ownership</h3>
+                        <p class="card__text">You take responsibility for outcomes—not just tasks.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="file-code-2"></i></div>
+                        <h3 class="card__title">Craftsmanship</h3>
+                        <p class="card__text">You care about building things the right way.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="clock-3"></i></div>
+                        <h3 class="card__title">Delivery Discipline</h3>
+                        <p class="card__text">Predictability matters as much as speed.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="lightbulb"></i></div>
+                        <h3 class="card__title">Curiosity</h3>
+                        <p class="card__text">You explore better approaches and stay open to learning.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="message-circle"></i></div>
+                        <h3 class="card__title">Communication</h3>
+                        <p class="card__text">You explain trade‑offs clearly and listen with intent.</p>
+                    </div>
+
+                    <div class="card card--fade">
+                        <div class="card__icon"><i data-lucide="heart-handshake"></i></div>
+                        <h3 class="card__title">Collaboration</h3>
+                        <p class="card__text">You make the team better through partnership.</p>
+                    </div>
                 </div>
-                <h3>Craftsmanship</h3>
-                <p>You care about building things the right way—clean code, thoughtful design, and maintainable systems.</p>
             </div>
+        </section>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="clock-3"></i>
+        <!-- CONTACT -->
+        <section class="section section--fade" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Contact</h2>
+                    <p class="section__subtitle">We’ll get back to you with clarity and direction.</p>
                 </div>
-                <h3>Delivery Discipline</h3>
-                <p>You respect commitments, timelines, and the people depending on them. Predictability matters as much as speed.</p>
-            </div>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="lightbulb"></i>
+                <div class="contact-card">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Name</label>
+                            <input class="form__input" id="name" type="text" placeholder="Your name" required />
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" id="email" type="email" placeholder="you@example.com" required />
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="message">Message</label>
+                            <textarea class="form__textarea" id="message" placeholder="Tell us briefly about your project, team, or challenge." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary form__submit">
+                            <i data-lucide="send"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+
+                    <!-- Success message -->
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">✓</div>
+                        <h3 class="form-success__title">Message Sent</h3>
+                        <p class="form-success__text">Thanks for reaching out. We’ll get back to you shortly.</p>
+
+                        <button id="resetForm" class="reset-btn">Send another message</button>
+                    </div>
                 </div>
-                <h3>Curiosity</h3>
-                <p>You ask better questions, explore better approaches, and stay open to learning—always.</p>
             </div>
+        </section>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="message-circle"></i>
-                </div>
-                <h3>Communication</h3>
-                <p>You explain trade‑offs clearly, listen with intent, and help teams stay aligned and informed.</p>
-            </div>
+    </main>
 
-            <div class="card fade-in">
-                <div class="card-icon">
-                    <i data-lucide="heart-handshake"></i>
-                </div>
-                <h3>Collaboration</h3>
-                <p>You make the work—and the team—better through partnership, empathy, and shared ownership.</p>
-            </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2026 Workplace. All rights reserved.
+    </footer>
 
-        </div>
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top">
+        <i data-lucide="arrow-up"></i>
+    </button>
 
-    </div>
-</section>
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-<!-- CONTACT -->
-<section class="section fade-in" id="contact">
-    <div class="container">
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
-        <div class="section-header">
-            <h2>Contact</h2>
-            <p>We’ll get back to you with clarity and direction.</p>
-        </div>
-
-      <div class="contact-card">
-    <form class="contact-form">
-        
-
-
-        
-        <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" required />
-        </div>
-
-        <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required />
-        </div>
-
-        <div>
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us briefly about your project, team, or challenge." required></textarea>
-        </div>
-
-        <button type="submit">
-            <i data-lucide="send"></i>
-            <span>Send Message</span>
-        </button>
-    </form>
-</div>
-
-    </div>
-</section>
-
-</main>
-
-<footer>
-    © 2026 Workplace. All rights reserved.
-</footer>
-
-<!-- BACK TO TOP BUTTON -->
-<button id="backToTop" class="back-to-top">
-    <i data-lucide="arrow-up"></i>
-</button>
-
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-    lucide.createIcons();
-
-    /* Smooth scroll without changing URL */
-    document.querySelectorAll('[data-scroll]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.getElementById(this.dataset.scroll);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-
-    /* Prevent hash from appearing */
-    window.addEventListener("hashchange", function() {
-        history.replaceState(null, null, " ");
-    });
-
-    /* Back to Top Button Logic */
-    const backToTop = document.getElementById("backToTop");
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 400) {
-            backToTop.classList.add("show");
-        } else {
-            backToTop.classList.remove("show");
-        }
-    });
-
-    backToTop.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    /* Fade-in Animation Logic */
-    const animatedElements = document.querySelectorAll(".fade-in");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    }, { threshold: 0.15 });
-
-    animatedElements.forEach(el => observer.observe(el));
-</script>
-
-<script>
-    const burger = document.getElementById("burger");
-    const navLinks = document.querySelector(".nav-links");
-
-    burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        navLinks.classList.toggle("show");
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            burger.classList.remove("active");
-            navLinks.classList.remove("show");
-        });
-    });
-</script>
-
-
-    <script>
-    // Always load at the top (Home) on refresh
-    window.addEventListener("beforeunload", () => {
-        window.scrollTo(0, 0);
-    });
-
-    // Also ensure on load it starts at top
-    window.addEventListener("load", () => {
-        setTimeout(() => window.scrollTo(0, 0), 10);
-    });
-</script>
-    
 </body>
 </html>
-
-
-
-
-
-
-
-
